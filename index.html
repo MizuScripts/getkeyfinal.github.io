@@ -29,7 +29,7 @@
   #checkpoint{
     margin-bottom:20px;
     font-size:1.2em;
-    color:#fff; /* white */
+    color:#fff;
     text-shadow:0 0 5px #fff;
   }
 
@@ -66,6 +66,25 @@
   .key-box button:hover{
     background:rgba(255,255,255,0.15);
     transform:scale(1.05);
+  }
+
+  /* Info box */
+  .info-box{
+    max-width:420px;
+    margin:0 auto 25px auto;
+    padding:15px 20px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:12px;
+    font-size:0.95em;
+    line-height:1.6em;
+    color:#ccc;
+    text-align:left;
+    box-shadow:0 0 10px rgba(255,255,255,0.2) inset;
+  }
+  .info-box b{
+    color:#fff;
+    text-shadow:0 0 6px #fff;
   }
 
   footer{
@@ -183,6 +202,16 @@
   <input type="text" id="keyInput" readonly>
   <button id="copyBtn">Copy</button>
   <button id="resetBtn">Reset Key</button>
+</div>
+
+<!-- Info box -->
+<div class="info-box">
+  <p>
+    🔑 This key is <b>temporary</b> and will <b>expire in 5 hours</b>.<br>
+    Please redeem it quickly through the checkpoint system.<br>
+    If the key expires, generate a new one.<br>
+    Do not share your key — it is bound to your HWID for security.
+  </p>
 </div>
 
 <footer>Website By: @mizuscripts</footer>
